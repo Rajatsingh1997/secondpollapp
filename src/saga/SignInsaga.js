@@ -1,6 +1,6 @@
 import { call, put } from "redux-saga/effects";
 import axiosCall from "../services/index";
-import { SignInSuccess, SignInError } from "../Redux/Action/Action";
+import { SignInSuccess, SignInError } from "../redux/action/actions";
 import jwt from "jsonwebtoken";
 
 // import React from "react";
