@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import SignUpfrm from './components/SignUpfrm';
+import SignInfrm from './components/SignInfrm';
+import { HashRouter, Route, Switch } from "react-router-dom";
+import Dashboard from './components/Dashboard';
+import AddPoll from "./components/Addpoll";
+import Editpoll from "./components/Editpoll";
+import PrivateRouting from "./components/PrivateRouting";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <HashRouter>
+        <Switch>
+        <Route path="/"   exact  component={
+          localStorage.getItem("token") ? Dashboard : SignInfrm
+        }/>
+        <Route path="/signinfrm" exact component={SignInfrm} />
+        <Route path="/signupform" exact component={SignUpfrm} />
+        <PrivateRouting path="/dashboard" exact component={Dashboard} />
+        <PrivateRouting path="/addpoll" component={AddPoll} />
+        <PrivateRouting path="/editpoll/:id" exact component={Editpoll}/>
+        </Switch>
+     </HashRouter>
     </div>
   );
 }

@@ -1,0 +1,18 @@
+.box0.navbar{
+    background-color:#7c9ec0!important;
+ }
+ .btn-success {
+     color: #fff;
+     background-color: #7c8084;
+     border-color: #bbd8c1;
+ }
+ .formshow{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+.btn btn-success.btn-success {
+    color: #fff;
+    background-color: #0d76e0;
+    border-color: #417080;
+}

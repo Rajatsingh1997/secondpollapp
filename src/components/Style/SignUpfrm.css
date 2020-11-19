@@ -1,0 +1,46 @@
+.box0.navbar{
+   background-color:#7c9ec0!important;
+}
+.formshow{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+.form-control-lg {
+    height: calc(1.5em + 1rem + -5px);
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+}
+.bot.form-control-lg {
+    height: calc(1.5em + 1rem + -11px);
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    margin-top: 26px;
+}
+.pop.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    margin-top: 40px;
+    border-color: #007bff;
+}
+.btn.btn-success {
+    color: #fff;
+    background-color: #0d76e0;
+    border-color: #417080;
+}
+.Rox.btn-primary.disabled, .btn-primary:disabled {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    margin-top: 24px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    margin-top: 20px;
+}
